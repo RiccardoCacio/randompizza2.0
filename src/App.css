@@ -1,0 +1,87 @@
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  touch-action: manipulation;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  color: rgb(231, 82, 82);
+  font-family: 'Satisfy', cursive;
+  font-size: 80px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 960px) {
+  .title {
+    font-size: 60px;
+  }
+}
+
+.hatSvg {
+  height: 150px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 960px) {
+  .hatSvg {
+    height: 100px;
+  }
+}
+
+.textBox {
+  font-size: 30px;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 960px) {
+  .textBox {
+    font-size: 23px;
+    gap: 5px;
+  }
+}
+
+.randomSpan {
+  color: rgb(231, 82, 82);
+  font-family: 'Satisfy', cursive;
+}
+
+.randomButton {
+  background-color: rgb(253, 198, 95);
+  color: black;
+  font-family: 'Slabo 27px', serif;
+  font-size: 25px;
+  font-weight: 600;
+  width: 190px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.randomButton:hover {
+  background-image: url(img/pizza.png);
+  border: 2px solid black;
+  background-size: cover;
+}
+
+.resultBox {
+  min-height: 50px;
+}
+
+.resultText {
+  margin-top: 30px;
+  font-size: 30px;
+  color: rgb(227, 70, 70);
+  font-family: 'Satisfy', cursive;
+}
